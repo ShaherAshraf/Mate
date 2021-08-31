@@ -1,0 +1,10 @@
+.hero {
+  background-image: url(/imgs/hero-area.jpg);
+  background-size: cover;
+  overflow: hidden;
+
+  .hero__content {
+    margin: 22vh 0;
+    text-align: center;
+  }
+}

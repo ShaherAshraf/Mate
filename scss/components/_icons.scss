@@ -1,0 +1,129 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/placeholders' as *;
+@use '../abstracts/mixins' as *;
+
+.services__item {
+  .service__icon {
+    @extend %icons-lg;
+    border: 0.1rem solid #f1f1f1;
+    color: $green;
+    margin: 2rem auto;
+  }
+  &:hover .service__icon {
+    color: $white-clr;
+    background-color: $green;
+  }
+}
+
+.features__item {
+  .feature__icon .lni {
+    @extend %icons-lg;
+    border: 0.1rem solid $green;
+    color: $green;
+  }
+  &:hover .feature__icon .lni {
+    color: $white-clr;
+    background-color: $green;
+  }
+}
+
+.video__icon {
+  @extend %icons-lg;
+  @extend %centerContent;
+  padding: 2.5rem;
+  margin: 0 auto;
+  border: 0.2rem solid $white-clr;
+  .lni-play {
+    margin-left: 0.5rem;
+  }
+}
+
+.counter__icon .lni {
+  font-size: 4rem;
+}
+
+.team {
+  .social__icons {
+    width: 90%;
+    a {
+      @extend %icons-lg;
+      width: 35px;
+      height: 35px;
+      margin: 0.5rem;
+      color: $green;
+      background: $white-clr;
+      &:hover {
+        color: $white-clr;
+      }
+      &.fb:hover {
+        background: $fb-clr;
+      }
+      &.tw:hover {
+        background: $tw-clr;
+      }
+      &.ig:hover {
+        background: $ig-clr;
+      }
+      &.li:hover {
+        background: $li-clr;
+      }
+
+      @include mQ(202px) {
+        margin: 0.5rem auto;
+      }
+    }
+  }
+}
+
+.contact__icons {
+  a .lni {
+    @extend %icons-lg;
+    padding: 0.7rem;
+    margin: 0.3rem;
+    display: inline;
+    background: $gray-lt-clr;
+  }
+
+  a.fb .lni {
+    color: $fb-clr;
+    &:hover {
+      color: $white-clr;
+      background: $fb-clr;
+    }
+  }
+  a.tw .lni {
+    color: $tw-clr;
+    &:hover {
+      color: $white-clr;
+      background: $tw-clr;
+    }
+  }
+  a.gg .lni {
+    color: $gg-clr;
+    &:hover {
+      color: $white-clr;
+      background: $gg-clr;
+    }
+  }
+  a.ig .lni {
+    color: $ig-clr;
+    &:hover {
+      color: $white-clr;
+      background: $ig-clr;
+    }
+  }
+  a.ig .lni {
+    color: $ig-clr;
+    &:hover {
+      color: $white-clr;
+      background: $ig-clr;
+    }
+  }
+  a.li .lni {
+    color: $li-clr;
+    &:hover {
+      color: $white-clr;
+      background: $li-clr;
+    }
+  }
+}

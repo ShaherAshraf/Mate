@@ -1,0 +1,23 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.features {
+  background-image: url(/imgs/bg1.jpg);
+  background-size: cover;
+
+  p {
+    @include mQ(240px) {
+      width: 100%;
+    }
+  }
+
+  .feature__title {
+    color: $green;
+    letter-spacing: 2px;
+  }
+
+  .feature__text {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}

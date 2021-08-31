@@ -1,0 +1,15 @@
+@use '../abstracts/mixins' as *;
+
+.services__item {
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    width: 90%;
+    font-size: 0.9rem;
+    @include mQ(240px) {
+      width: 100%;
+    }
+  }
+}

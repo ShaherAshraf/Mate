@@ -1,0 +1,53 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.btn {
+  border: 0;
+
+  &:hover {
+    background: $green-dark;
+  }
+
+  .btn-check:focus + &,
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .btn-check:checked + &,
+  .btn-check:active + &,
+  &:active,
+  &.active {
+    box-shadow: none;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.hero__content {
+  .btn {
+    padding: 0.5rem 3rem;
+  }
+}
+
+.portfolio {
+  .btn.active {
+    color: $green;
+    background: white;
+    border: 1px solid $green;
+  }
+
+  .btn {
+    @include mQ(768px) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+}

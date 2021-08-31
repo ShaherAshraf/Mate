@@ -1,0 +1,6 @@
+@use '../abstracts/variables' as *;
+
+.team .card {
+  background: $gray-card-clr;
+  border: 0;
+}

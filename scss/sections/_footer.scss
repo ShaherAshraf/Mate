@@ -1,0 +1,14 @@
+@use '../abstracts/variables' as *;
+
+.footer {
+  font-size: 0.9rem;
+  background-color: $dark-clr;
+
+  a {
+    color: $white-clr;
+    &:hover {
+      color: $green;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}

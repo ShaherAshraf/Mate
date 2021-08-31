@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as *;
+
+.blog {
+  .card-title {
+    color: $dark-clr;
+    letter-spacing: 2px;
+    &:hover {
+      color: $green;
+      transition: 0.5s ease-in-out;
+    }
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+    span {
+      color: $gray-clr;
+    }
+  }
+
+  .card-link {
+    color: $gray-clr;
+    font-size: 0.9rem;
+    &:hover {
+      color: $green;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}

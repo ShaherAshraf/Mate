@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/placeholders' as *;
+
+.portfolio {
+  .portfolio-images {
+    .row {
+      margin: 0 auto;
+    }
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .card-img-overlay {
+    border-radius: 0;
+    transition: background-color 0.5s ease-in-out;
+    @extend %centerContent;
+
+    .lni-eye {
+      padding: 0.7rem;
+      border: 0.1rem solid $green;
+      border-radius: 50%;
+      @extend %centerContent;
+      display: none;
+      transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    }
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+      .lni-eye {
+        display: initial;
+        &:hover {
+          color: $white-clr;
+          background-color: $green;
+        }
+      }
+    }
+  }
+}

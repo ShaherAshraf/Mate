@@ -1,0 +1,21 @@
+@use '../abstracts/mixins' as *;
+
+.pricing {
+  .col .card:hover {
+    transition: box-shadow 0.5s ease-in-out;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  .card-title {
+    font-size: 3rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    line-height: 2.5rem;
+    width: 85%;
+    @include mQ(240px) {
+      width: 100%;
+    }
+  }
+}

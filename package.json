@@ -1,0 +1,29 @@
+{
+  "name": "mate-landing-page",
+  "version": "1.0.0",
+  "description": "a sass/bootstrap landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/main.scss:css/main.css",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html:build"
+  },
+  "keywords": [
+    "sass",
+    "bootstrap",
+    "javascript"
+  ],
+  "author": "Shaher Ashraf",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "glightbox": "^3.1.0",
+    "gsap": "^3.7.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0",
+    "sass": "^1.38.2"
+  }
+}

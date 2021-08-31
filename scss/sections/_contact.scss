@@ -1,0 +1,24 @@
+@use '../abstracts/mixins' as *;
+
+.contact {
+  background-color: #343a40;
+  .contact__form {
+    .form-control {
+      background-color: #343a40;
+    }
+  }
+
+  h2::after {
+    display: none;
+  }
+
+  .contact__icons {
+    a {
+      @include mQ(282px) {
+        display: inline-block;
+        margin: 1rem;
+        margin-left: 0;
+      }
+    }
+  }
+}

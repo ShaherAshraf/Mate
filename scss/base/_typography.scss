@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $dark-clr;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  &::after {
+    content: '';
+    display: block;
+    width: 4.5rem;
+    height: 2px;
+    margin: 1rem auto 0;
+    background: $green;
+  }
+  @include mQ(240px) {
+    font-size: 1.3rem;
+  }
+}
+
+p {
+  line-height: 1.7rem;
+}
+
+h2 + p {
+  font-size: 0.9rem;
+  @include mQ(240px) {
+    width: 100%;
+  }
+}

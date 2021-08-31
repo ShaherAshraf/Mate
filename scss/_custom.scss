@@ -1,0 +1,20 @@
+// OVERRIDDEN VARIABLES
+$primary: #61d2b4;
+$carousel-indicator-width: 15px;
+$carousel-indicator-height: 15px;
+$carousel-indicator-active-bg: $primary;
+$navbar-toggler-padding-x: 0.6rem;
+
+// IMPORTED FUNCTIONS & VARIABLES
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+// CUSTOMIZED MAPS
+$custom-theme-colors: (
+  'green': #61d2b4,
+  'green-dark': #33b391,
+);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// IMPORTED BOOTSTRAP STYLES
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
