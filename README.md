@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Original Template : [Click Here](https://preview.uideck.com/items/mate/)
-- My own Template : [Click Here](https://your-live-site-url.com)
+- My own Template : [Click Here](https://mate-template.netlify.app/)
 
 ## My process
 
@@ -40,6 +40,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Shaher Ashraf](https://www.your-site.com)
+- Website - [Shaher Ashraf](shaherashraf77@gmail.com)
 
 
